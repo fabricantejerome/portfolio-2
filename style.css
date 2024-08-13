@@ -137,7 +137,7 @@ section:nth-of-type(1) {
 
 #about-me p {
     font-size: 18px;
-    color: var(--slate-300);
+    color: var(--slate-200);
     margin-bottom: 1rem;
 }
 
@@ -187,28 +187,28 @@ section > p {
     margin-bottom: 150px;
 }
 
-.card {
+.offers .card {
     flex: 0 0 30%;
     margin-top: 20px;
 }
 
-.card p {
+.offers .card p {
     color: var(--slate-500);
 }
 
 
-.card-header {
+.offers .card-header {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 1rem;
 }
 
-.card-header .logo {
+.offers .card-header .logo {
     width: 2.5rem;
 }
 
-.card-header h3 {
+.offers .card-header h3 {
     color: var(--orange-600);
     font-size: 1.5rem;
 }
@@ -432,5 +432,11 @@ footer {
         width: 100%;
         font-size: 2rem;
         align-items: center;
+    }
+}
+
+@media (max-width: 735px) {
+    .offers .card {
+        flex: 0 0 45%;
     }
 }
