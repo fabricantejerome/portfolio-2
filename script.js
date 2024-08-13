@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const changeActiveLink = () => {
         let index = sections.length;
 
+        if(index === 0) {
+            return;
+        }
+
         while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
         navLinks.forEach((link) => link.classList.remove('active'));
