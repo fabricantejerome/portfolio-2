@@ -132,7 +132,12 @@ section:nth-of-type(1) {
 
 #about-me h2 {
     color: var(--blue-950);
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+#about-me .company {
+    font-size: 1rem;
+    color: var(--slate-300);
 }
 
 #about-me p {
@@ -232,10 +237,6 @@ li {
     text-indent: -1em;
 }
 
-#projects {
-    box-shadow: 0px 0px 2px var(--slate-400);
-}
-
 #projects h1 {
     color: var(--blue-950);
 }
@@ -279,8 +280,12 @@ li {
     margin-bottom: 1rem;
 }
 
+#testimonials {
+    background: var(--blue-950);
+}
+
 #testimonials h1 {
-    color: var(--blue-950)  ;
+    color: var(--slate-200)  ;
 }
 
 .testimonial-block {
@@ -292,31 +297,20 @@ li {
 
 .testimonial {
     flex: 1 1 45%;
-    box-shadow: 1px 2px 2px var(--slate-400);
+    background: var(--slate-100);
     padding: 2rem;
     border-radius: 25px;
-}
-
-.testimonial-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-.testimonial-header img {
-    border-radius: 50px;
 }
 
 .testimonial-content {
     line-height: 1.5;
     color: var(--slate-500);
+    margin-bottom: 1rem;
 }
 
 .testimonial-name {
     font-size: 18px;
     color: var(--orange-600);
-    font-weight: bold;
 }
 
 .testimonial-position {
@@ -436,7 +430,7 @@ footer {
         justify-content: center;
     }
 
-    #testimonials {
+    .testimonial-block {
         flex-direction: column;
         align-items: center;
     }
