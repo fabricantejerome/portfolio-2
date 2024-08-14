@@ -187,14 +187,17 @@ section > p {
 .offers {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
 .offers .card {
-    flex: 0 0 30%;
+    flex: 0 0 45%;
     margin-top: 20px;
+    background: var(--slate-300);
+    padding: 2rem;
+    border-radius: 16px;
 }
 
 .offers .card p {
@@ -204,7 +207,6 @@ section > p {
 
 .offers .card-header {
     display: flex;
-    align-items: center;
     gap: 12px;
     margin-bottom: 1rem;
 }
@@ -225,16 +227,18 @@ section > p {
     padding: 2rem;
 }
 
-ul {
+#about-me ul {
     margin-left: 2rem;
     color: var(--slate-200);
-    /* list-style: none; */
     margin-bottom: 30px;
+    font-size: 18px;
+    
 }
 
-li {
+#about-me li {
     padding-left: 1em;
     text-indent: -1em;
+    margin-bottom: 12px;
 }
 
 #projects h1 {
@@ -254,7 +258,7 @@ li {
 }
 
 .project-item-header {
-    border-radius: 25px 25px 0 0;
+    border-radius: 16px 16px 0 0;
     overflow: hidden;
     margin-top: 0;
 }
@@ -299,7 +303,10 @@ li {
     flex: 1 1 45%;
     background: var(--slate-100);
     padding: 2rem;
-    border-radius: 25px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-content {
@@ -357,7 +364,7 @@ footer {
     margin: 0;
 }
 
-.logo {
+header .logo {
     margin-left: 1rem;
     width: 2rem;
     height: 2rem;
@@ -388,7 +395,7 @@ footer {
     transform: scaleX(0);
     height: 0.125rem;
     bottom: -0.5rem;
-    right: 0.5rem;
+    right: 0.1rem;
     background: var(--slate-200);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
@@ -398,10 +405,10 @@ footer {
     content: '';
     position: absolute;
     width: 100%;
-    transform: scaleX(1.25);
+    transform: scaleX(1);
     height: 0.125rem;
     bottom: -0.5rem;
-    right: 0.5rem;
+    right: 0.1rem;
     color: var(--slate-200);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
